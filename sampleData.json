@@ -1,0 +1,15 @@
+
+{
+"cols": [
+        {"id":"","label":"Expense","pattern":"","type":"string"},
+        {"id":"","label":"Cost","pattern":"","type":"number"}
+      ],
+  "rows": [
+  		{"c":[{"v":"Food","f":null},{"v":620.36,"f":null}]},
+		{"c":[{"v":"Fuel","f":null},{"v":410.48762999999997,"f":null}]},
+		{"c":[{"v":"goods","f":null},{"v":45,"f":null}]},
+		{"c":[{"v":"hookers","f":null},{"v":200,"f":null}]},
+		{"c":[{"v":"Truck Parts","f":null},{"v":507,"f":null}]},
+
+      ]
+}

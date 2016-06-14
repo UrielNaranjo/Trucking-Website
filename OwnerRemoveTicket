@@ -1,0 +1,470 @@
+Script started on Wed 11 May 2016 07:44:46 PM UTC
+]0;root@ip-172-31-43-222: /var/www/htmlroot@ip-172-31-43-222:/var/www/html# ./script.sh OwnerRemoveTicket
+]0;root@ip-172-31-43-222: /var/www/htmlroot@ip-172-31-43-222:/var/www/html# LS
+The program 'LS' is currently not installed. You can install it by typing:
+apt-get install sl
+]0;root@ip-172-31-43-222: /var/www/htmlroot@ip-172-31-43-222:/var/www/html# ls
+\                        AddVendorInfo.php              GetDriver.php             OwnerApproveSubmit.php              OwnerViewExpense.php        RemoveHauler.php
+AddBrokerError.php       AddVendorOkay.php              GetExpenseType.php        OwnerApproveTicketInfo.php          RemoveBrokerError.php       RemoveTruckError.php
+AddBrokerInfo.php        AddVendor.php                  GetHaulers.php            OwnerApproveTicket.php              RemoveBrokerInfo.php        RemoveTruckInfo.php
+AddBrokerOkay.php        ChangeDriverPasswordError.php  GetTicketInfo.php         OwnerDisplayBrokerTicketInfo.php    RemoveBrokerOkay.php        RemoveTruckOkay.php
+AddBroker.php            ChangeDriverPasswordInfo.php   GetTruckID.php            OwnerDisplayBrokerTicket.php        RemoveBroker.php            RemoveTruck.php
+AddDriverError.php       ChangeDriverPasswordOkay.php   GetVendor.php             OwnerDisplayDriverTicketInfo.php    RemoveDriverError.php       RemoveVendorError.php
+AddDriverInfo.php        ChangeDriverPassword.php       home.html                 OwnerDisplayDriverTicket.php        RemoveDriverInfo.php        RemoveVendorInfo.php
+AddDriverOkay.php        [0m[01;34mcss[0m                            home.php                  OwnerGenRepDisplayBrokerTicket.php  RemoveDriverOkay.php        RemoveVendorOkay.php
+AddDriver.php            db.php                         [01;34mimages[0m                    OwnerGenRepDisplayDriverTicket.php  RemoveDriver.php            RemoveVendor.php
+AddExpenseTypeError.php  DisplayDriverTicketInfo.php    index.html                OwnerGenRepExpense.php              RemoveExpenseError.php      [01;32mScriptAddNewFeature.sh[0m
+AddExpenseTypeInfo.php   DisplayDriverTicket.php        iOSGetBrokers.php         OwnerPaidTicketInfo.php             RemoveExpenseGenRep.php     [01;32mscript.sh[0m
+AddExpenseTypeOkay.php   DriverAddExpenseError.php      iOSGetExpenseType.php     OwnerPaidTicket.php                 RemoveExpenseInfo.php       temp.txt
+AddExpenseType.php       DriverAddExpenseOkay.php       iOSGetHaulers.php         OwnerPaidTicketSubmit.php           RemoveExpenseOkay.php       [01;34mtest[0m
+AddHaulerError.php       DriverAddExpense.php           iOSGetTicketInfo.php      OwnerRemoveTicket                   RemoveExpense.php           [01;32mtest1.sh[0m
+AddHaulerInfo.php        DriverAddTicketError.php       iOSGetTIDs.php            OwnerRemoveTicketError.php          RemoveExpenseSubmit.php     [01;32mtest.html[0m
+AddHaulerOkay.php        DriverAddTicketOkay.php        iOSGetVendor.php          OwnerRemoveTicketGenRep.php         RemoveExpenseTypeError.php  testlogin.php
+AddHauler.php            DriverAddTicket.php            iOSUploadExpense.php      OwnerRemoveTicketInfo.php           RemoveExpenseTypeInfo.php   test.php
+AddTruckError.php        DriverRemoveTicket.php         logout.php                OwnerRemoveTicketOkay.php           RemoveExpenseTypeOkay.php   [01;32mtestScript.sh[0m
+AddTruckInfo.php         [01;32mdroptest.php[0m                   OwnerAddDriverTicket.php  OwnerRemoveTicket.php               RemoveExpenseType.php       UploadExpense.php
+AddTruckOkay.php         expense.php                    OwnerAddExpenseError.php  OwnerRemoveTicketSubmit.php         RemoveHaulerError.php       WebServiceDriver.php
+AddTruck.php             GenRepDisplayDriverTicket.php  OwnerAddExpenseOkay.php   [01;32mOwnerUploadExpense.php[0m              RemoveHaulerInfo.php        WebService.php
+AddVendorError.php       GetBrokers.php                 OwnerAddExpense.php       OwnerViewExpenseInfo.php            RemoveHaulerOkay.php        [01;34myour-project[0m
+]0;root@ip-172-31-43-222: /var/www/htmlroot@ip-172-31-43-222:/var/www/html# Ow[K[Kvim OwnerRemoveTicketError.php 
+[?1000h[?1049h[?1h=[2;1H▽[6n[1;1H  [1;1H[1;56r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[56;1H"OwnerRemoveTicketError.php" 217L, 4989C[>c[1;1H[38;5;130m  1 [m[34m<!DOCTYPE html>[m
+[38;5;130m  2 [m[36m<[m[38;5;130mhtml[m[36m [m[32mlang[m[36m=[m[31m"en"[m[36m>[m
+[38;5;130m  3 
+  4 [m[36m<[m[38;5;130mhead[m[36m>[m
+[38;5;130m  5 [m[35m    [m[36m<[m[38;5;130mmeta[m[36m [m[32mcharset[m[36m=[m[31m"utf-8"[m[36m>[m
+[38;5;130m  6 [m[35m    [m[36m<[m[38;5;130mtitle[m[36m>[m[35mLuis Trucking - Sign In [m[36m</[m[38;5;130mtitle[m[36m>[m
+[38;5;130m  7 
+  8 [m[35m    [m[34m<!-- Google Fonts -->[m
+[38;5;130m  9 [m[35m    [m[36m<[m[38;5;130mlink[m[36m [m[32mhref[m[36m=[m[31m'https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900'[m[36m [m[32mrel[m[36m=[m[31m'stylesheet'[m[36m [m[32mtype[m[36m=[m[31m'text/css'[m[36m>[m
+[38;5;130m 10 
+ 11 [m[35m    [m[36m<[m[38;5;130mlink[m[36m [m[32mrel[m[36m=[m[31m"stylesheet"[m[36m [m[32mhref[m[36m=[m[31m"css/animate.css"[m[36m>[m
+[38;5;130m 12 [m[35m    [m[34m<!-- Custom Stylesheet -->[m
+[38;5;130m 13 [m[35m    [m[36m<[m[38;5;130mlink[m[36m [m[32mrel[m[36m=[m[31m"stylesheet"[m[36m [m[32mhref[m[36m=[m[31m"css/styleDisplayDriverData.css"[m[36m>[m
+[38;5;130m 14 
+ 15 [m[35m    [m[36m<[m[38;5;130mscript[m[36m [m[32msrc[m[36m=[m[31m"https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"[m[36m></[m[38;5;130mscript[m[36m>[m
+[38;5;130m 16 
+ 17 [m[36m<[m[38;5;130mstyle[m[36m>[m
+[38;5;130m 18 body[m [36m{[m[32mmargin[m:[31m0[m;[36m}[m
+[38;5;130m 19 [m[36m.header{[m
+[38;5;130m 20 [m    [32mbackground-color[m:[31m#333[m;
+[38;5;130m 21 [m    [32moverflow-y[m:[31mhidden[m;
+[38;5;130m 22 [m    [32mfont-family[m:[31m'Roboto Slab'[m[35m,[m [31mserif[m;
+[38;5;130m 23 [m    [32mfont-size[m:[31m16px[m;
+[38;5;130m 24 [m    [32mposition[m: [31mrelative[m;
+[38;5;130m 25 [m[36m}[m
+[38;5;130m 26 
+ 27 [m[36m.header-wrapper{[m
+[38;5;130m 28 [m    [32mwidth[m:[31m100%[m;
+[38;5;130m 29 [m    [32mmargin[m: [31m0[m [31mauto[m;
+[38;5;130m 30 [m    [32mtext-align[m: [31mleft[m;
+[38;5;130m 31 [m    [32mposition[m: [31mfixed[m;
+[38;5;130m 32 [m    [32mz-index[m: [31m99[m;
+[38;5;130m 33 [m[36m}[m
+[38;5;130m 34 
+ 35 [m[36m.header[m [38;5;130mul[m[36m{[m
+[38;5;130m 36 [m    [32mbackground-color[m:[31m#333[m;
+[38;5;130m 37 [m    [32mlist-style-type[m:[31mnone[m;
+[38;5;130m 38 [m    [32mpadding[m: [31m0[m;
+[38;5;130m 39 [m    [32mmargin[m: [31m0[m;
+[38;5;130m 40 [m    [32mtop[m: [31m0[m;
+[38;5;130m 41 [m    [32mposition[m: [31mrelative[m;
+[38;5;130m 42 [m    [32mz-index[m: [31m101[m;
+[38;5;130m 43 [m[36m}[m
+[38;5;130m 44 
+ 45 [m[36m.header[m [38;5;130mul[m [38;5;130mli[m[36m{[m
+[38;5;130m 46 [m    [32mdisplay[m:[31minline-block[m;
+[38;5;130m 47 [m    [32mcolor[m: [31mwhite[m;
+[38;5;130m 48 [m[36m}[m
+[38;5;130m 49 
+ 50 [m[36m.header[m [38;5;130mul[m [38;5;130mli[m:[35mhover[m[36m{[m
+[38;5;130m 51 [m    [32mbackground-color[m: [31m#888[m;
+[38;5;130m 52 [m[36m}[m
+[38;5;130m 53 
+ 54 [m[36m.header[m [38;5;130mul[m [38;5;130mli[m [38;5;130ma[m[35m,[mvisited[36m{[m
+[38;5;130m 55 [m    [32mcolor[m: [31mwhite[m;[56;164H1,1[11CTop[1;5H[?12l[?25h[?1000l[?1002h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 56 [m    [32mdisplay[m:[31mblock[m;
+[38;5;130m 57 [m    [32mpadding[m: [31m16px[m;
+[38;5;130m 58 [m    [32mtext-decoration[m: [31mnone[m;[56;1H[K[56;164H4,1[12C1%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 59 [m[36m}[m
+[38;5;130m 60 
+ 61 [m[36m.header[m [38;5;130mul[m [38;5;130mli[m [38;5;130ma[m:[35mhover[m[36m{[m[56;164H[K[56;164H7,0-1[10C3%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 62 [m    [32mcolor[m: [31mwhite[m;
+[38;5;130m 63 [m    [32mtext-decoration[m: [31mnone[m;
+[38;5;130m 64 [m[36m}[m[56;164H[K[56;164H10,0-1[9C5%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 65 
+ 66 [m[36m.header[m [38;5;130mul[m [38;5;130mli[m:[35mhover[m [38;5;130mul[m[36m{[m
+[38;5;130m 67 [m    [32mdisplay[m: [31mblock[m;[56;164H[K[56;164H13,1-4[9C7%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 68 [m[36m}[m
+[38;5;130m 69 
+ 70 [m[36m.header[m [38;5;130mul[m [38;5;130mul[m[36m{[m[56;164H[K[56;164H16,0-1[9C9%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 71 [m    [32mdisplay[m: [31mnone[m;
+[38;5;130m 72 [m    [32mposition[m: [31mabsolute[m;
+[38;5;130m 73 [m    [32mtop[m: [31m53px[m;[56;164H[K[56;164H19,1[10C11%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 74 [m    [32mz-index[m:[31m1000[m;
+[38;5;130m 75 [m[36m}[m
+[38;5;130m 76 [m[56;164H[K[56;164H22,1-4[8C12%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 77 [m[36m.header[m [38;5;130mul[m [38;5;130mul[m [38;5;130mli[m[36m{[m
+[38;5;130m 78 [m    [32mdisplay[m: [31mblock[m;
+[38;5;130m 79 [m[36m}[m[56;164H[K[56;164H25,1[10C14%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 80 
+ 81 [m[36m.active[m [36m{[m
+[38;5;130m 82 [m    [32mbackground-color[m:[31m#999[m;[56;164H[K[56;164H28,1-4[8C16%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 83 [m[36m}[m
+[38;5;130m 84 
+ 85 [m[36m</[m[38;5;130mstyle[m[36m>[m[56;164H[K[56;164H31,1-4[8C18%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 86 [m[36m</[m[38;5;130mhead[m[36m>[m
+[38;5;130m 87 [m[36m<[m[38;5;130mbody[m[36m>[m
+[38;5;130m 88 [m[36m<[m[38;5;130mdiv[m[36m [m[32mclass[m[36m=[m[31m"header"[m[36m>[m[56;164H[K[56;164H34,0-1[8C20%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 89 [m    [36m<[m[38;5;130mdiv[m[36m [m[32mclass[m[36m=[m[31m"header-wrapper"[m[36m>[m
+[38;5;130m 90 [m    [36m<[m[38;5;130mul[m[36m>[m
+[38;5;130m 91 [m    [36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"home.php"[m[36m>[m[4m[35mHome[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m><[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H37,1-4[8C22%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 92 [m[8C[36m<[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"#hauler"[m[36m>[m[4m[35mHaulers[m[36m</[m[38;5;130ma[m[36m>[m
+[38;5;130m 93 [m[12C[36m<[m[38;5;130mul[m[36m>[m
+[38;5;130m 94 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/AddHauler.php"[m[36m>[m[4m[35mAdd Hauler[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H40,1-4[8C24%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 95 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/RemoveHauler.php"[m[36m>[m[4m[35mRemove Hauler[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m 96 [m[12C[36m</[m[38;5;130mul[m[36m></[m[38;5;130mli[m[36m><[m[38;5;130mli[m[36m>[m
+[38;5;130m 97 [m[56;164H[K[56;164H43,1[10C25%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 98 [m[8C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"#brk"[m[36m>[m[4m[35mBrokers[m[36m</[m[38;5;130ma[m[36m>[m
+[38;5;130m 99 [m[12C[36m<[m[38;5;130mul[m[36m>[m
+[38;5;130m100 [m[56;164H[K[56;164H46,1-4[8C27%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m101 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/OwnerDisplayBrokerTicket.php"[m[36m>[m[4m[35mView Tickets[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m102 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/OwnerPaidTicket.php"[m[36m>[m[4m[35mUpdate Paid Tickets[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m103 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/AddBroker.php"[m[36m>[m[4m[35mAdd Broker[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H49,0-1[8C29%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m104 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/RemoveBroker.php"[m[36m>[m[4m[35mRemove Broker[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m105 [m[12C[36m</[m[38;5;130mul[m[36m></[m[38;5;130mli[m[36m><[m[38;5;130mli[m[36m>[m
+[38;5;130m106 [m[8C[36m<[m[38;5;130ma[m[36m [m[32mclass[m[36m=[m[31m"active"[m[36m [m[32mhref[m[36m=[m[31m"#drvr"[m[36m>[m[4m[35mDriver[m[36m</[m[38;5;130ma[m[36m>[m[56;164H[K[56;164H52,1[10C31%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m107 [m[12C[36m<[m[38;5;130mul[m[36m>[m
+[38;5;130m108 
+109 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/AddDriver.php"[m[36m>[m[4m[35mAdd Ticket[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H55,1-4[8C33%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m110 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/OwnerDisplayDriverTicket.php"[m[36m>[m[4m[35mView Tickets[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m111 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m/OwnerRemoveTicket.php[m[36m>[m[4m[35mRemove Ticket[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m112 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/OwnerApproveTicket.php"[m[36m>[m[4m[35mApprove Tickets[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H58,1-4[8C35%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m113 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/AddDriver.php"[m[36m>[m[4m[35mAdd Driver[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m114 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/RemoveDriver.php"[m[36m>[m[4m[35mRemove Driver[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m115 [m[12C[36m</[m[38;5;130mul[m[36m></[m[38;5;130mli[m[36m><[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H61,1[10C37%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m116 [m[12C[36m<[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"#trk"[m[36m>[m[4m[35mTrucks[m[36m</[m[38;5;130ma[m[36m>[m
+[38;5;130m117 [m[12C[36m<[m[38;5;130mul[m[36m>[m
+[38;5;130m118 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/AddTruck.php"[m[36m>[m[4m[35mAdd Truck[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H64,1[10C38%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m119 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/RemoveTruck.php"[m[36m>[m[4m[35mRemove Truck[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m120 [m[12C[36m</[m[38;5;130mul[m[36m></[m[38;5;130mli[m[36m><[m[38;5;130mli[m[36m>[m
+[38;5;130m121 [m[12C[36m<[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"#ex"[m[36m>[m[4m[35mExpenses[m[36m</[m[38;5;130ma[m[36m>[m[56;164H[K[56;164H67,1-4[8C40%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m122 [m[12C[36m<[m[38;5;130mul[m[36m>[m
+[38;5;130m123 
+124 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/OwnerAddExpense.php"[m[36m>[m[4m[35mAdd Expense[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H70,1[10C42%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m125 [m[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m/OwnerViewExpense.php[m[36m>[m[4m[35mView Expense[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m126 [m[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m/RemoveExpense.php[m[36m>[m[4m[35mRemove Expense[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m127 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/AddVendor.php"[m[36m>[m[4m[35mAdd Vendor[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H73,1-4[8C44%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m128 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/RemoveVendor.php"[m[36m>[m[4m[35mRemove Vendor[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m129 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/AddExpenseType.php"[m[36m>[m[4m[35mAdd Expense Type[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m130 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/RemoveExpenseType.php"[m[36m>[m[4m[35mRemove Expense Type[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H76,0-1[8C46%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m131 [m[12C[36m</[m[38;5;130mul[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m132 [m[8C[36m<[m[38;5;130mli[m[36m [m[32mstyle[m[36m = [m[31m"float:right"[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"logout.php"[m[36m>[m[4m[35mLogout[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m133 [m[8C[36m<[m[38;5;130mli[m[36m [m[32mstyle[m[36m = [m[31m"float:right; color:#FFF; background-color:#333; padding: 14px 16px;"[m[36m>[m[35m<?php[m [35mecho[m "[31mWelcome, [m"; [35mecho[m [38;5;130m$[m[36m_COOKIE[m[35m[[muname[35m][m[38;5;130m.[m"[31m![m"; [35m?>[m[36m</[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H79,1[10C48%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m134 [m    [36m</[m[38;5;130mul[m[36m>[m
+[38;5;130m135 [m    [36m</[m[38;5;130mdiv[m[36m>[m
+[38;5;130m136 [m[36m</[m[38;5;130mdiv[m[36m>[m[56;164H[K[56;164H82,1-4[8C50%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m137 
+138 
+139 [m[56;164H[K[56;164H85,1[10C51%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m140 
+141 [m[36m<[m[38;5;130mdiv[m[36m [m[32mclass[m[36m=[m[31m"container"[m[36m>[m
+[38;5;130m142 [m[8C[36m<[m[38;5;130mdiv[m[36m [m[32mclass[m[36m=[m[31m"top"[m[36m>[m[56;164H[K[56;164H88,1[10C53%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m143 [m[12C[36m<[m[38;5;130mh1[m[36m [m[32mid[m[36m=[m[31m"title"[m[36m [m[32mclass[m[36m=[m[31m"hidden"[m[36m><[m[38;5;130mspan[m[36m [m[32mid[m[36m=[m[31m"logo"[m[36m><[m[38;5;130mbr[m[36m/>[m[35m [m[36m</[m[38;5;130mh1[m[36m>[m
+[38;5;130m144 [m[8C[36m</[m[38;5;130mdiv[m[36m>[m
+[38;5;130m145 [m[8C[36m<[m[38;5;130mdiv[m[36m [m[32mclass[m[36m=[m[31m"ticket-box animated fadeInUp"[m[36m>[m[56;164H[K[56;164H91,1-4[8C55%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m146 [m[12C[36m<[m[38;5;130mdiv[m[36m [m[32mclass[m[36m=[m[31m"box-header"[m[36m>[m
+[38;5;130m147 [m[16C[36m<[m[38;5;130mh2[m[36m>[m[35mRemove Ticket Entries [m[36m</[m[38;5;130mh2[m[36m>[m
+[38;5;130m148 [m[12C[36m<[m[38;5;130mform[m[36m [m[32maction[m[36m=[m[31m"OwnerRemoveTicketGenRep.php"[m[36m [m[32mmethod[m[36m=[m[31m"post"[m[36m>[m[56;164H[K[56;164H94,1-4[8C57%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m149 [m[12C[36m</[m[38;5;130mdiv[m[36m>[m
+[38;5;130m150 [m[12C[36m<[m[38;5;130mlabel[m[36m [m[32mfor[m[36m=[m[31m"driver"[m[36m>[mSelect Hauler:[36m</[m[38;5;130mlabel[m[36m>[m
+[38;5;130m151 [m[12C[36m<[m[38;5;130mbr[m[36m/>[m[56;164H[K[56;164H97,0-1[8C59%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m152 [m[12C[36m<[m[38;5;130mselect[m[36m [m[32mname[m[36m=[m[31m'hauler'[m[36m [m[32mid[m[36m=[m[31m'hauler'[m[36m>[m
+[38;5;130m153 [m[12C[36m<[m[38;5;130moption[m[36m [m[32mvalue[m[36m=[m[31m'*'[m[36m>[mAll[36m</[m[38;5;130moption[m[36m>[m
+[38;5;130m154 [m[12C[35m<?php[m[56;164H[K[56;164H100,0-1[7C61%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m155 [m[16C[35mrequire([m'[31m./GetHaulers.php[m'[35m)[m;
+[38;5;130m156 [m[12C[35m?>[m
+[38;5;130m157 [m[12C[36m</[m[38;5;130mselect[m[36m>[m[56;164H[K[56;164H103,1-4[7C62%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m158 [m[12C[36m<[m[38;5;130mbr[m[36m/>[m
+[38;5;130m159 [m[12C[36m<[m[38;5;130mlabel[m[36m [m[32mfor[m[36m=[m[31m"driver"[m[36m>[mSelect Broker:[36m</[m[38;5;130mlabel[m[36m>[m
+[38;5;130m160 [m[12C[36m<[m[38;5;130mbr[m[36m/>[m[56;164H[K[56;164H106,1-4[7C64%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m161 [m[12C[36m<[m[38;5;130mselect[m[36m [m[32mname[m[36m=[m[31m'broker'[m[36m [m[32mid[m[36m=[m[31m'broker'[m[36m>[m
+[38;5;130m162 [m[12C[36m<[m[38;5;130moption[m[36m [m[32mvalue[m[36m=[m[31m'*'[m[36m>[mAll[36m</[m[38;5;130moption[m[36m>[m
+[38;5;130m163 [m[12C[35m<?php[m[56;164H[K[56;164H109,1-4[7C66%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m164 [m[16C[35mrequire([m'[31m./GetBrokers.php[m'[35m)[m;
+[38;5;130m165 [m[12C[35m?>[m
+[38;5;130m166 [m[12C[36m</[m[38;5;130mselect[m[36m>[m[56;164H[K[56;164H112,1-4[7C68%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m167 [m[12C[36m<[m[38;5;130mbr[m[36m/>[m
+[38;5;130m168 
+169 [m[12C[36m<[m[38;5;130mlabel[m[36m [m[32mfor[m[36m=[m[31m"driver"[m[36m>[mSelect Driver:[36m</[m[38;5;130mlabel[m[36m>[m[56;164H[K[56;164H115,1-4[7C70%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m170 [m[12C[36m<[m[38;5;130mbr[m[36m/>[m
+[38;5;130m171 [m[12C[36m<[m[38;5;130mselect[m[36m [m[32mname[m[36m=[m[31m'driver'[m[36m [m[32mid[m[36m=[m[31m'driver'[m[36m>[m
+[38;5;130m172 [m[12C[36m<[m[38;5;130moption[m[36m [m[32mvalue[m[36m=[m[31m'*'[m[36m>[mAll[36m</[m[38;5;130moption[m[36m>[m[56;164H[K[56;164H118,1-4[7C72%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m173 [m[12C[35m<?php[m
+[38;5;130m174 [m[16C[35mrequire([m'[31m./GetDriver.php[m'[35m)[m;
+[38;5;130m175 [m[12C[35m?>[m[56;164H[K[56;164H121,1-4[7C74%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m176 [m[12C[36m</[m[38;5;130mselect[m[36m>[m
+[38;5;130m177 [m[12C[36m<[m[38;5;130mbr[m[36m/>[m
+[38;5;130m178 [m[56;164H[K[56;164H124,1-4[7C75%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m179 [m[12C[36m<[m[38;5;130mlabel[m[36m [m[32mfor[m[36m=[m[31m"driver"[m[36m>[mSelect TruckID:[36m</[m[38;5;130mlabel[m[36m>[m
+[38;5;130m180 [m[12C[36m<[m[38;5;130mbr[m[36m/>[m
+[38;5;130m181 [m[12C[36m<[m[38;5;130mselect[m[36m [m[32mname[m[36m=[m[31m'truckid'[m[36m [m[32mid[m[36m=[m[31m'truckid'[m[36m>[m[56;164H[K[56;164H127,1-4[7C77%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m182 [m[12C[36m<[m[38;5;130moption[m[36m [m[32mvalue[m[36m=[m[31m'*'[m[36m>[mAll[36m</[m[38;5;130moption[m[36m>[m
+[38;5;130m183 [m[12C[35m<?php[m
+[38;5;130m184 [m[16C[35mrequire([m'[31m./GetTruckID.php[m'[35m)[m;[56;164H[K[56;164H130,1-4[7C79%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3L[1;56r[1;1H[38;5;130m127 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/AddVendor.php"[m[36m>[m[4m[35mAdd Vendor[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m128 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/RemoveVendor.php"[m[36m>[m[4m[35mRemove Vendor[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m129 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/AddExpenseType.php"[m[36m>[m[4m[35mAdd Expense Type[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H130,1-4[7C77%[4;8H[?12l[?25h[?25l[1;55r[1;1H[3L[1;56r[1;1H[38;5;130m124 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/OwnerAddExpense.php"[m[36m>[m[4m[35mAdd Expense[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m125 [m[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m/OwnerViewExpense.php[m[36m>[m[4m[35mView Expense[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m126 [m[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m/RemoveExpense.php[m[36m>[m[4m[35mRemove Expense[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H130,1-4[7C75%[7;8H[?12l[?25h[?25l[56;165H49,9-18[26;22H[?12l[?25h[?25l[56;154Ha[26;22H[56;154H [26;23H[56;1H[1m-- INSERT --[m[56;164H[K[56;164H149,10-19     75%[26;23H[?12l[?25h[?25l[27;17H[K[28;18H[38;5;130mlabel[m[36m [m[32mfor[m[36m=[m[31m"driver"[m[36m>[mSelect Hauler:[36m</[m[38;5;130mlabel[m[36m>[m[29;18H[38;5;130mbr[m[36m/>[m[29;22H[K[30;18H[38;5;130mselect[m[1C[32mname[m[36m=[m[31m'hauler'[m[36m [m[32mid[m[36m=[m[31m'hauler'[m[36m>[31;17H<[m[38;5;130moption[m[36m [m[32mvalue[m[36m=[m[31m'*'[m[36m>[mAll[36m</[m[38;5;130moption[m[36m>[m[32;17H[35m<?php[m[32;22H[K[33;17H    [35mrequire([m'[31m./GetHaulers.php[m'[35m)[m;[34;17H[35m?>[m[34;19H[K[35;18H[36m/[m[38;5;130mselect[m[36m>[m[36;18H[38;5;130mbr[m[36m/>[m[36;22H[K[37;18H[38;5;130mlabel[m[36m [m[32mfor[m[36m=[m[31m"driver"[m[36m>[mSelect Broker:[36m</[m[38;5;130mlabel[m[36m>[m[38;18H[38;5;130mbr[m[36m/>[m[38;22H[K[39;18H[38;5;130mselect[m[1C[32mname[m[36m=[m[31m'broker'[m[36m [m[32mid[m[36m=[m[31m'broker'[m[36m>[40;17H<[m[38;5;130moption[m[36m [m[32mvalue[m[36m=[m[31m'*'[m[36m>[mAll[36m</[m[38;5;130moption[m[36m>[m[41;17H[35m<?php[m[41;22H[K[42;17H    [35mrequire([m'[31m./GetBrokers.php[m'[35m)[m;[43;17H[35m?>[m[43;19H[K[44;18H[36m/[m[38;5;130mselect[m[36m>[45;17H<[m[38;5;130mbr[m[36m/>[m[46;17H[K[47;18H[38;5;130mlabel[m[36m [m[32mfor[m[36m=[m[31m"driver"[m[36m>[mSelect Driver:[36m</[m[38;5;130mlabel[m[36m>[m[48;18H[38;5;130mbr[m[36m/>[m[48;22H[K[49;18H[38;5;130mselect[m[1C[32mname[m[36m=[m[31m'driver'[m[36m [m[32mid[m[36m=[m[31m'driver'[m[36m>[50;17H<[m[38;5;130moption[m[36m [m[32mvalue[m[36m=[m[31m'*'[m[36m>[mAll[36m</[m[38;5;130moption[m[36m>[m[51;17H[35m<?php[m[51;22H[K[52;17H    [35mrequire([m'[31m./GetDriver.php[m'[35m)[m;[53;17H[35m?>[m[53;19H[K[54;18H[36m/[m[38;5;130mselect[m[36m>[55;17H<[m[38;5;130mbr[m[36m/>[m[56;165H50,4-13 [27;17H[?12l[?25h[?25lE[56;168H5-14[27;18H[?12l[?25h[?25lr[56;168H6-15[27;19H[?12l[?25h[?25lr[56;168H7-16[27;20H[?12l[?25h[?25lo[56;168H8-17[27;21H[?12l[?25h[?25lr[56;168H9-18[27;22H[?12l[?25h[?25l[56;168H10-19[27;23H[?12l[?25h[?25lR[56;169H1-20[27;24H[?12l[?25h[?25le[56;169H2-21[27;25H[?12l[?25h[?25lm[56;169H3-22[27;26H[?12l[?25h[?25lo[56;169H4-23[27;27H[?12l[?25h[?25lv[56;169H5-24[27;28H[?12l[?25h[?25li[56;169H6-25[27;29H[?12l[?25h[?25ln[56;169H7-26[27;30H[?12l[?25h[?25lg[56;169H8-27[27;31H[?12l[?25h[?25l[56;169H9-28[27;32H[?12l[?25h[?25lT[56;168H20-29[27;33H[?12l[?25h[?25li[56;169H1-30[27;34H[?12l[?25h[?25lc[56;169H2-31[27;35H[?12l[?25h[?25lk[56;169H3-32[27;36H[?12l[?25h[?25le[56;169H4-33[27;37H[?12l[?25h[?25lt[56;169H5-34[27;38H[?12l[?25h[?25l,[56;169H6-35[27;39H[?12l[?25h[?25l[56;169H7-36[27;40H[?12l[?25h[?25lT[56;169H8-37[27;41H[?12l[?25h[?25lR[56;169H9-38[27;42H[?12l[?25h[?25ly[56;168H30-39[27;43H[?12l[?25h[?25l[27;42H[K[56;168H29-38[27;42H[?12l[?25h[?25l[27;41H[K[56;169H8-37[27;41H[?12l[?25h[?25lr[56;169H9-38[27;42H[?12l[?25h[?25ly[56;168H30-39[27;43H[?12l[?25h[?25l[56;169H1-40[27;44H[?12l[?25h[?25lA[56;169H2-41[27;45H[?12l[?25h[?25lg[56;169H3-42[27;46H[?12l[?25h[?25la[56;169H4-43[27;47H[?12l[?25h[?25li[56;169H5-44[27;48H[?12l[?25h[?25ln[56;169H6-45[27;49H[?12l[?25h[?25l![56;169H7-46[27;50H[?12l[?25h[?25l[28;17H[K[29;18H[38;5;130mlabel[m[36m [m[32mfor[m[36m=[m[31m"driver"[m[36m>[mSelect Hauler:[36m</[m[38;5;130mlabel[m[36m>[m[30;18H[38;5;130mbr[m[36m/>[m[30;22H[K[31;18H[38;5;130mselect[m[1C[32mname[m[36m=[m[31m'hauler'[m[36m [m[32mid[m[36m=[m[31m'hauler'[m[36m>[32;17H<[m[38;5;130moption[m[36m [m[32mvalue[m[36m=[m[31m'*'[m[36m>[mAll[36m</[m[38;5;130moption[m[36m>[m[33;17H[35m<?php[m[33;22H[K[34;17H    [35mrequire([m'[31m./GetHaulers.php[m'[35m)[m;[35;17H[35m?>[m[35;19H[K[36;18H[36m/[m[38;5;130mselect[m[36m>[m[37;18H[38;5;130mbr[m[36m/>[m[37;22H[K[38;18H[38;5;130mlabel[m[36m [m[32mfor[m[36m=[m[31m"driver"[m[36m>[mSelect Broker:[36m</[m[38;5;130mlabel[m[36m>[m[39;18H[38;5;130mbr[m[36m/>[m[39;22H[K[40;18H[38;5;130mselect[m[1C[32mname[m[36m=[m[31m'broker'[m[36m [m[32mid[m[36m=[m[31m'broker'[m[36m>[41;17H<[m[38;5;130moption[m[36m [m[32mvalue[m[36m=[m[31m'*'[m[36m>[mAll[36m</[m[38;5;130moption[m[36m>[m[42;17H[35m<?php[m[42;22H[K[43;17H    [35mrequire([m'[31m./GetBrokers.php[m'[35m)[m;[44;17H[35m?>[m[44;19H[K[45;18H[36m/[m[38;5;130mselect[m[36m>[46;17H<[m[38;5;130mbr[m[36m/>[m[47;17H[K[48;18H[38;5;130mlabel[m[36m [m[32mfor[m[36m=[m[31m"driver"[m[36m>[mSelect Driver:[36m</[m[38;5;130mlabel[m[36m>[m[49;18H[38;5;130mbr[m[36m/>[m[49;22H[K[50;18H[38;5;130mselect[m[1C[32mname[m[36m=[m[31m'driver'[m[36m [m[32mid[m[36m=[m[31m'driver'[m[36m>[51;17H<[m[38;5;130moption[m[36m [m[32mvalue[m[36m=[m[31m'*'[m[36m>[mAll[36m</[m[38;5;130moption[m[36m>[m[52;17H[35m<?php[m[52;22H[K[53;17H    [35mrequire([m'[31m./GetDriver.php[m'[35m)[m;[54;17H[35m?>[m[54;19H[K[55;18H[36m/[m[38;5;130mselect[m[36m>[m[56;166H1,4-13 [28;17H[?12l[?25h[?25l[97m[101m<[m[56;168H5-14[28;18H[?12l[?25h[?25l[36m<>[29;5H            [m[97m[101m<[m[32mlabel[m[56;168H6-15[28;19H[?12l[?25h[?25l[56;168H5-14[28;18H[?12l[?25h[?25l[38;5;130mb[m[36m>[m[29;5H[1m            [m[36m<[m[38;5;130mlabel[m[14C[1mSelect Hauler:[30;5H            [31;5H            [32;5H            [18CAll[33;5H            [36;5H            [37;5H            [38;5H            [20CSelect Broker:[39;5H            [40;5H            [41;5H            [18CAll[42;5H            [45;5H            [46;5H            [48;5H            [20CSelect Driver:[49;5H            [50;5H            [51;5H            [18CAll[52;5H            [55;5H            [m[56;168H6-15[28;19H[?12l[?25h[?25l[38;5;130mr[m[36m>[m[29;5H            [36m<[m[19CSelect Hauler:[36m<[m[30;5H            [36m<[m[31;5H            [36m<[m[32;5H            [36m<[m[17CAll[36m<[m[33;5H            [35m<[m[36;5H            [36m<[m[37;5H            [36m<[m[38;5H            [36m<[m[19CSelect Broker:[36m<[m[39;5H            [36m<[m[40;5H            [36m<[m[41;5H            [36m<[m[17CAll[36m<[m[42;5H            [35m<[m[45;5H            [36m<[m[46;5H            [36m<[m[48;5H            [36m<[m[19CSelect Driver:[36m<[m[49;5H            [36m<[m[50;5H            [36m<[m[51;5H            [36m<[m[17CAll[36m<[m[52;5H            [35m<[m[55;5H            [36m<[m[56;168H7-16[28;20H[?12l[?25h[?25l[36m/>[m[56;168H8-17[28;21H[?12l[?25h[56;1H[K[28;20H[?25l[56;154H^[[28;20H[?12l[?25h[?25l[56;154H  [28;21H[56;164H151,7-16      75%[28;20H[?12l[?25h[?25l[56;154H:[28;20H[56;154H[K[56;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l[?1002l"OwnerRemoveTicketError.php" 219L, 5035C written
+[?1l>[?12l[?25h[?1049l]0;root@ip-172-31-43-222: /var/www/htmlroot@ip-172-31-43-222:/var/www/html# vim OwnerRemoveTicketError.php [C[1P[1P[1P[1P[1P[1@O[1@k[1@a[1@y
+[?1000h[?1049h[?1h=[2;1H▽[6n[1;1H  [1;1H[1;56r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[56;1H"OwnerRemoveTicketOkay.php" 217L, 4989C[>c[1;1H[38;5;130m  1 [m[34m<!DOCTYPE html>[m
+[38;5;130m  2 [m[36m<[m[38;5;130mhtml[m[36m [m[32mlang[m[36m=[m[31m"en"[m[36m>[m
+[38;5;130m  3 
+  4 [m[36m<[m[38;5;130mhead[m[36m>[m
+[38;5;130m  5 [m[35m    [m[36m<[m[38;5;130mmeta[m[36m [m[32mcharset[m[36m=[m[31m"utf-8"[m[36m>[m
+[38;5;130m  6 [m[35m    [m[36m<[m[38;5;130mtitle[m[36m>[m[35mLuis Trucking - Sign In [m[36m</[m[38;5;130mtitle[m[36m>[m
+[38;5;130m  7 
+  8 [m[35m    [m[34m<!-- Google Fonts -->[m
+[38;5;130m  9 [m[35m    [m[36m<[m[38;5;130mlink[m[36m [m[32mhref[m[36m=[m[31m'https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900'[m[36m [m[32mrel[m[36m=[m[31m'stylesheet'[m[36m [m[32mtype[m[36m=[m[31m'text/css'[m[36m>[m
+[38;5;130m 10 
+ 11 [m[35m    [m[36m<[m[38;5;130mlink[m[36m [m[32mrel[m[36m=[m[31m"stylesheet"[m[36m [m[32mhref[m[36m=[m[31m"css/animate.css"[m[36m>[m
+[38;5;130m 12 [m[35m    [m[34m<!-- Custom Stylesheet -->[m
+[38;5;130m 13 [m[35m    [m[36m<[m[38;5;130mlink[m[36m [m[32mrel[m[36m=[m[31m"stylesheet"[m[36m [m[32mhref[m[36m=[m[31m"css/styleDisplayDriverData.css"[m[36m>[m
+[38;5;130m 14 
+ 15 [m[35m    [m[36m<[m[38;5;130mscript[m[36m [m[32msrc[m[36m=[m[31m"https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"[m[36m></[m[38;5;130mscript[m[36m>[m
+[38;5;130m 16 
+ 17 [m[36m<[m[38;5;130mstyle[m[36m>[m
+[38;5;130m 18 body[m [36m{[m[32mmargin[m:[31m0[m;[36m}[m
+[38;5;130m 19 [m[36m.header{[m
+[38;5;130m 20 [m    [32mbackground-color[m:[31m#333[m;
+[38;5;130m 21 [m    [32moverflow-y[m:[31mhidden[m;
+[38;5;130m 22 [m    [32mfont-family[m:[31m'Roboto Slab'[m[35m,[m [31mserif[m;
+[38;5;130m 23 [m    [32mfont-size[m:[31m16px[m;
+[38;5;130m 24 [m    [32mposition[m: [31mrelative[m;
+[38;5;130m 25 [m[36m}[m
+[38;5;130m 26 
+ 27 [m[36m.header-wrapper{[m
+[38;5;130m 28 [m    [32mwidth[m:[31m100%[m;
+[38;5;130m 29 [m    [32mmargin[m: [31m0[m [31mauto[m;
+[38;5;130m 30 [m    [32mtext-align[m: [31mleft[m;
+[38;5;130m 31 [m    [32mposition[m: [31mfixed[m;
+[38;5;130m 32 [m    [32mz-index[m: [31m99[m;
+[38;5;130m 33 [m[36m}[m
+[38;5;130m 34 
+ 35 [m[36m.header[m [38;5;130mul[m[36m{[m
+[38;5;130m 36 [m    [32mbackground-color[m:[31m#333[m;
+[38;5;130m 37 [m    [32mlist-style-type[m:[31mnone[m;
+[38;5;130m 38 [m    [32mpadding[m: [31m0[m;
+[38;5;130m 39 [m    [32mmargin[m: [31m0[m;
+[38;5;130m 40 [m    [32mtop[m: [31m0[m;
+[38;5;130m 41 [m    [32mposition[m: [31mrelative[m;
+[38;5;130m 42 [m    [32mz-index[m: [31m101[m;
+[38;5;130m 43 [m[36m}[m
+[38;5;130m 44 
+ 45 [m[36m.header[m [38;5;130mul[m [38;5;130mli[m[36m{[m
+[38;5;130m 46 [m    [32mdisplay[m:[31minline-block[m;
+[38;5;130m 47 [m    [32mcolor[m: [31mwhite[m;
+[38;5;130m 48 [m[36m}[m
+[38;5;130m 49 
+ 50 [m[36m.header[m [38;5;130mul[m [38;5;130mli[m:[35mhover[m[36m{[m
+[38;5;130m 51 [m    [32mbackground-color[m: [31m#888[m;
+[38;5;130m 52 [m[36m}[m
+[38;5;130m 53 
+ 54 [m[36m.header[m [38;5;130mul[m [38;5;130mli[m [38;5;130ma[m[35m,[mvisited[36m{[m
+[38;5;130m 55 [m    [32mcolor[m: [31mwhite[m;[56;164H1,1[11CTop[1;5H[?12l[?25h[?1000l[?1002h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 56 [m    [32mdisplay[m:[31mblock[m;
+[38;5;130m 57 [m    [32mpadding[m: [31m16px[m;
+[38;5;130m 58 [m    [32mtext-decoration[m: [31mnone[m;[56;1H[K[56;164H4,1[12C1%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 59 [m[36m}[m
+[38;5;130m 60 
+ 61 [m[36m.header[m [38;5;130mul[m [38;5;130mli[m [38;5;130ma[m:[35mhover[m[36m{[m[56;164H[K[56;164H7,0-1[10C3%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 62 [m    [32mcolor[m: [31mwhite[m;
+[38;5;130m 63 [m    [32mtext-decoration[m: [31mnone[m;
+[38;5;130m 64 [m[36m}[m[56;164H[K[56;164H10,0-1[9C5%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 65 
+ 66 [m[36m.header[m [38;5;130mul[m [38;5;130mli[m:[35mhover[m [38;5;130mul[m[36m{[m
+[38;5;130m 67 [m    [32mdisplay[m: [31mblock[m;[56;164H[K[56;164H13,1-4[9C7%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 68 [m[36m}[m
+[38;5;130m 69 
+ 70 [m[36m.header[m [38;5;130mul[m [38;5;130mul[m[36m{[m[56;164H[K[56;164H16,0-1[9C9%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 71 [m    [32mdisplay[m: [31mnone[m;
+[38;5;130m 72 [m    [32mposition[m: [31mabsolute[m;
+[38;5;130m 73 [m    [32mtop[m: [31m53px[m;[56;164H[K[56;164H19,1[10C11%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 74 [m    [32mz-index[m:[31m1000[m;
+[38;5;130m 75 [m[36m}[m
+[38;5;130m 76 [m[56;164H[K[56;164H22,1-4[8C12%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 77 [m[36m.header[m [38;5;130mul[m [38;5;130mul[m [38;5;130mli[m[36m{[m
+[38;5;130m 78 [m    [32mdisplay[m: [31mblock[m;
+[38;5;130m 79 [m[36m}[m[56;164H[K[56;164H25,1[10C14%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 80 
+ 81 [m[36m.active[m [36m{[m
+[38;5;130m 82 [m    [32mbackground-color[m:[31m#999[m;[56;164H[K[56;164H28,1-4[8C16%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 83 [m[36m}[m
+[38;5;130m 84 
+ 85 [m[36m</[m[38;5;130mstyle[m[36m>[m[56;164H[K[56;164H31,1-4[8C18%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 86 [m[36m</[m[38;5;130mhead[m[36m>[m
+[38;5;130m 87 [m[36m<[m[38;5;130mbody[m[36m>[m
+[38;5;130m 88 [m[36m<[m[38;5;130mdiv[m[36m [m[32mclass[m[36m=[m[31m"header"[m[36m>[m[56;164H[K[56;164H34,0-1[8C20%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 89 [m    [36m<[m[38;5;130mdiv[m[36m [m[32mclass[m[36m=[m[31m"header-wrapper"[m[36m>[m
+[38;5;130m 90 [m    [36m<[m[38;5;130mul[m[36m>[m
+[38;5;130m 91 [m    [36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"home.php"[m[36m>[m[4m[35mHome[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m><[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H37,1-4[8C22%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 92 [m[8C[36m<[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"#hauler"[m[36m>[m[4m[35mHaulers[m[36m</[m[38;5;130ma[m[36m>[m
+[38;5;130m 93 [m[12C[36m<[m[38;5;130mul[m[36m>[m
+[38;5;130m 94 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/AddHauler.php"[m[36m>[m[4m[35mAdd Hauler[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H40,1-4[8C24%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 95 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/RemoveHauler.php"[m[36m>[m[4m[35mRemove Hauler[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m 96 [m[12C[36m</[m[38;5;130mul[m[36m></[m[38;5;130mli[m[36m><[m[38;5;130mli[m[36m>[m
+[38;5;130m 97 [m[56;164H[K[56;164H43,1[10C25%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 98 [m[8C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"#brk"[m[36m>[m[4m[35mBrokers[m[36m</[m[38;5;130ma[m[36m>[m
+[38;5;130m 99 [m[12C[36m<[m[38;5;130mul[m[36m>[m
+[38;5;130m100 [m[56;164H[K[56;164H46,1-4[8C27%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m101 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/OwnerDisplayBrokerTicket.php"[m[36m>[m[4m[35mView Tickets[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m102 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/OwnerPaidTicket.php"[m[36m>[m[4m[35mUpdate Paid Tickets[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m103 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/AddBroker.php"[m[36m>[m[4m[35mAdd Broker[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H49,0-1[8C29%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m104 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/RemoveBroker.php"[m[36m>[m[4m[35mRemove Broker[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m105 [m[12C[36m</[m[38;5;130mul[m[36m></[m[38;5;130mli[m[36m><[m[38;5;130mli[m[36m>[m
+[38;5;130m106 [m[8C[36m<[m[38;5;130ma[m[36m [m[32mclass[m[36m=[m[31m"active"[m[36m [m[32mhref[m[36m=[m[31m"#drvr"[m[36m>[m[4m[35mDriver[m[36m</[m[38;5;130ma[m[36m>[m[56;164H[K[56;164H52,1[10C31%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m107 [m[12C[36m<[m[38;5;130mul[m[36m>[m
+[38;5;130m108 
+109 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/AddDriver.php"[m[36m>[m[4m[35mAdd Ticket[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H55,1-4[8C33%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m110 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/OwnerDisplayDriverTicket.php"[m[36m>[m[4m[35mView Tickets[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m111 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m/OwnerRemoveTicket.php[m[36m>[m[4m[35mRemove Ticket[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m112 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/OwnerApproveTicket.php"[m[36m>[m[4m[35mApprove Tickets[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H58,1-4[8C35%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m113 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/AddDriver.php"[m[36m>[m[4m[35mAdd Driver[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m114 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/RemoveDriver.php"[m[36m>[m[4m[35mRemove Driver[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m115 [m[12C[36m</[m[38;5;130mul[m[36m></[m[38;5;130mli[m[36m><[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H61,1[10C37%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m116 [m[12C[36m<[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"#trk"[m[36m>[m[4m[35mTrucks[m[36m</[m[38;5;130ma[m[36m>[m
+[38;5;130m117 [m[12C[36m<[m[38;5;130mul[m[36m>[m
+[38;5;130m118 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/AddTruck.php"[m[36m>[m[4m[35mAdd Truck[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H64,1[10C38%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m119 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/RemoveTruck.php"[m[36m>[m[4m[35mRemove Truck[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m120 [m[12C[36m</[m[38;5;130mul[m[36m></[m[38;5;130mli[m[36m><[m[38;5;130mli[m[36m>[m
+[38;5;130m121 [m[12C[36m<[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"#ex"[m[36m>[m[4m[35mExpenses[m[36m</[m[38;5;130ma[m[36m>[m[56;164H[K[56;164H67,1-4[8C40%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m122 [m[12C[36m<[m[38;5;130mul[m[36m>[m
+[38;5;130m123 
+124 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/OwnerAddExpense.php"[m[36m>[m[4m[35mAdd Expense[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H70,1[10C42%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m125 [m[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m/OwnerViewExpense.php[m[36m>[m[4m[35mView Expense[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m126 [m[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m/RemoveExpense.php[m[36m>[m[4m[35mRemove Expense[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m127 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/AddVendor.php"[m[36m>[m[4m[35mAdd Vendor[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H73,1-4[8C44%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m128 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/RemoveVendor.php"[m[36m>[m[4m[35mRemove Vendor[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m129 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/AddExpenseType.php"[m[36m>[m[4m[35mAdd Expense Type[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m130 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/RemoveExpenseType.php"[m[36m>[m[4m[35mRemove Expense Type[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H76,0-1[8C46%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m131 [m[12C[36m</[m[38;5;130mul[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m132 [m[8C[36m<[m[38;5;130mli[m[36m [m[32mstyle[m[36m = [m[31m"float:right"[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"logout.php"[m[36m>[m[4m[35mLogout[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m133 [m[8C[36m<[m[38;5;130mli[m[36m [m[32mstyle[m[36m = [m[31m"float:right; color:#FFF; background-color:#333; padding: 14px 16px;"[m[36m>[m[35m<?php[m [35mecho[m "[31mWelcome, [m"; [35mecho[m [38;5;130m$[m[36m_COOKIE[m[35m[[muname[35m][m[38;5;130m.[m"[31m![m"; [35m?>[m[36m</[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H79,1[10C48%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m134 [m    [36m</[m[38;5;130mul[m[36m>[m
+[38;5;130m135 [m    [36m</[m[38;5;130mdiv[m[36m>[m
+[38;5;130m136 [m[36m</[m[38;5;130mdiv[m[36m>[m[56;164H[K[56;164H82,1-4[8C50%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m137 
+138 
+139 [m[56;164H[K[56;164H85,1[10C51%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m140 
+141 [m[36m<[m[38;5;130mdiv[m[36m [m[32mclass[m[36m=[m[31m"container"[m[36m>[m
+[38;5;130m142 [m[8C[36m<[m[38;5;130mdiv[m[36m [m[32mclass[m[36m=[m[31m"top"[m[36m>[m[56;164H[K[56;164H88,1[10C53%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m143 [m[12C[36m<[m[38;5;130mh1[m[36m [m[32mid[m[36m=[m[31m"title"[m[36m [m[32mclass[m[36m=[m[31m"hidden"[m[36m><[m[38;5;130mspan[m[36m [m[32mid[m[36m=[m[31m"logo"[m[36m><[m[38;5;130mbr[m[36m/>[m[35m [m[36m</[m[38;5;130mh1[m[36m>[m
+[38;5;130m144 [m[8C[36m</[m[38;5;130mdiv[m[36m>[m
+[38;5;130m145 [m[8C[36m<[m[38;5;130mdiv[m[36m [m[32mclass[m[36m=[m[31m"ticket-box animated fadeInUp"[m[36m>[m[56;164H[K[56;164H91,1-4[8C55%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m146 [m[12C[36m<[m[38;5;130mdiv[m[36m [m[32mclass[m[36m=[m[31m"box-header"[m[36m>[m
+[38;5;130m147 [m[16C[36m<[m[38;5;130mh2[m[36m>[m[35mRemove Ticket Entries [m[36m</[m[38;5;130mh2[m[36m>[m
+[38;5;130m148 [m[12C[36m<[m[38;5;130mform[m[36m [m[32maction[m[36m=[m[31m"OwnerRemoveTicketGenRep.php"[m[36m [m[32mmethod[m[36m=[m[31m"post"[m[36m>[m[56;164H[K[56;164H94,1-4[8C57%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m149 [m[12C[36m</[m[38;5;130mdiv[m[36m>[m
+[38;5;130m150 [m[12C[36m<[m[38;5;130mlabel[m[36m [m[32mfor[m[36m=[m[31m"driver"[m[36m>[mSelect Hauler:[36m</[m[38;5;130mlabel[m[36m>[m
+[38;5;130m151 [m[12C[36m<[m[38;5;130mbr[m[36m/>[m[56;164H[K[56;164H97,0-1[8C59%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m152 [m[12C[36m<[m[38;5;130mselect[m[36m [m[32mname[m[36m=[m[31m'hauler'[m[36m [m[32mid[m[36m=[m[31m'hauler'[m[36m>[m
+[38;5;130m153 [m[12C[36m<[m[38;5;130moption[m[36m [m[32mvalue[m[36m=[m[31m'*'[m[36m>[mAll[36m</[m[38;5;130moption[m[36m>[m
+[38;5;130m154 [m[12C[35m<?php[m[56;164H[K[56;164H100,0-1[7C61%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m155 [m[16C[35mrequire([m'[31m./GetHaulers.php[m'[35m)[m;
+[38;5;130m156 [m[12C[35m?>[m
+[38;5;130m157 [m[12C[36m</[m[38;5;130mselect[m[36m>[m[56;164H[K[56;164H103,1-4[7C62%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m158 [m[12C[36m<[m[38;5;130mbr[m[36m/>[m
+[38;5;130m159 [m[12C[36m<[m[38;5;130mlabel[m[36m [m[32mfor[m[36m=[m[31m"driver"[m[36m>[mSelect Broker:[36m</[m[38;5;130mlabel[m[36m>[m
+[38;5;130m160 [m[12C[36m<[m[38;5;130mbr[m[36m/>[m[56;164H[K[56;164H106,1-4[7C64%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m161 [m[12C[36m<[m[38;5;130mselect[m[36m [m[32mname[m[36m=[m[31m'broker'[m[36m [m[32mid[m[36m=[m[31m'broker'[m[36m>[m
+[38;5;130m162 [m[12C[36m<[m[38;5;130moption[m[36m [m[32mvalue[m[36m=[m[31m'*'[m[36m>[mAll[36m</[m[38;5;130moption[m[36m>[m
+[38;5;130m163 [m[12C[35m<?php[m[56;164H[K[56;164H109,1-4[7C66%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m164 [m[16C[35mrequire([m'[31m./GetBrokers.php[m'[35m)[m;
+[38;5;130m165 [m[12C[35m?>[m
+[38;5;130m166 [m[12C[36m</[m[38;5;130mselect[m[36m>[m[56;164H[K[56;164H112,1-4[7C68%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m167 [m[12C[36m<[m[38;5;130mbr[m[36m/>[m
+[38;5;130m168 
+169 [m[12C[36m<[m[38;5;130mlabel[m[36m [m[32mfor[m[36m=[m[31m"driver"[m[36m>[mSelect Driver:[36m</[m[38;5;130mlabel[m[36m>[m[56;164H[K[56;164H115,1-4[7C70%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m170 [m[12C[36m<[m[38;5;130mbr[m[36m/>[m
+[38;5;130m171 [m[12C[36m<[m[38;5;130mselect[m[36m [m[32mname[m[36m=[m[31m'driver'[m[36m [m[32mid[m[36m=[m[31m'driver'[m[36m>[m
+[38;5;130m172 [m[12C[36m<[m[38;5;130moption[m[36m [m[32mvalue[m[36m=[m[31m'*'[m[36m>[mAll[36m</[m[38;5;130moption[m[36m>[m[56;164H[K[56;164H118,1-4[7C72%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m173 [m[12C[35m<?php[m
+[38;5;130m174 [m[16C[35mrequire([m'[31m./GetDriver.php[m'[35m)[m;
+[38;5;130m175 [m[12C[35m?>[m[56;164H[K[56;164H121,1-4[7C74%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m176 [m[12C[36m</[m[38;5;130mselect[m[36m>[m
+[38;5;130m177 [m[12C[36m<[m[38;5;130mbr[m[36m/>[m
+[38;5;130m178 [m[56;164H[K[56;164H124,1-4[7C75%[1;8H[?12l[?25h[?25l[56;165H49,9-18[26;22H[?12l[?25h[?25l[56;154Ha[26;22H[56;154H [26;23H[56;1H[1m-- INSERT --[m[56;164H[K[56;164H149,10-19     75%[26;23H[?12l[?25h[?25l[27;17H[K[28;18H[38;5;130mlabel[m[36m [m[32mfor[m[36m=[m[31m"driver"[m[36m>[mSelect Hauler:[36m</[m[38;5;130mlabel[m[36m>[m[29;18H[38;5;130mbr[m[36m/>[m[29;22H[K[30;18H[38;5;130mselect[m[1C[32mname[m[36m=[m[31m'hauler'[m[36m [m[32mid[m[36m=[m[31m'hauler'[m[36m>[31;17H<[m[38;5;130moption[m[36m [m[32mvalue[m[36m=[m[31m'*'[m[36m>[mAll[36m</[m[38;5;130moption[m[36m>[m[32;17H[35m<?php[m[32;22H[K[33;17H    [35mrequire([m'[31m./GetHaulers.php[m'[35m)[m;[34;17H[35m?>[m[34;19H[K[35;18H[36m/[m[38;5;130mselect[m[36m>[m[36;18H[38;5;130mbr[m[36m/>[m[36;22H[K[37;18H[38;5;130mlabel[m[36m [m[32mfor[m[36m=[m[31m"driver"[m[36m>[mSelect Broker:[36m</[m[38;5;130mlabel[m[36m>[m[38;18H[38;5;130mbr[m[36m/>[m[38;22H[K[39;18H[38;5;130mselect[m[1C[32mname[m[36m=[m[31m'broker'[m[36m [m[32mid[m[36m=[m[31m'broker'[m[36m>[40;17H<[m[38;5;130moption[m[36m [m[32mvalue[m[36m=[m[31m'*'[m[36m>[mAll[36m</[m[38;5;130moption[m[36m>[m[41;17H[35m<?php[m[41;22H[K[42;17H    [35mrequire([m'[31m./GetBrokers.php[m'[35m)[m;[43;17H[35m?>[m[43;19H[K[44;18H[36m/[m[38;5;130mselect[m[36m>[45;17H<[m[38;5;130mbr[m[36m/>[m[46;17H[K[47;18H[38;5;130mlabel[m[36m [m[32mfor[m[36m=[m[31m"driver"[m[36m>[mSelect Driver:[36m</[m[38;5;130mlabel[m[36m>[m[48;18H[38;5;130mbr[m[36m/>[m[48;22H[K[49;18H[38;5;130mselect[m[1C[32mname[m[36m=[m[31m'driver'[m[36m [m[32mid[m[36m=[m[31m'driver'[m[36m>[50;17H<[m[38;5;130moption[m[36m [m[32mvalue[m[36m=[m[31m'*'[m[36m>[mAll[36m</[m[38;5;130moption[m[36m>[m[51;17H[35m<?php[m[51;22H[K[52;17H    [35mrequire([m'[31m./GetDriver.php[m'[35m)[m;[53;17H[35m?>[m[53;19H[K[54;18H[36m/[m[38;5;130mselect[m[36m>[55;17H<[m[38;5;130mbr[m[36m/>[m[56;165H50,4-13 [27;17H[?12l[?25h[?25lT[56;168H5-14[27;18H[?12l[?25h[?25li[56;168H6-15[27;19H[?12l[?25h[?25lc[56;168H7-16[27;20H[?12l[?25h[?25lk[56;168H8-17[27;21H[?12l[?25h[?25le[56;168H9-18[27;22H[?12l[?25h[?25lt[56;168H10-19[27;23H[?12l[?25h[?25l[56;169H1-20[27;24H[?12l[?25h[?25lR[56;169H2-21[27;25H[?12l[?25h[?25le[56;169H3-22[27;26H[?12l[?25h[?25lm[56;169H4-23[27;27H[?12l[?25h[?25lo[56;169H5-24[27;28H[?12l[?25h[?25lv[56;169H6-25[27;29H[?12l[?25h[?25le[56;169H7-26[27;30H[?12l[?25h[?25ld[56;169H8-27[27;31H[?12l[?25h[?25l![56;169H9-28[27;32H[?12l[?25h[56;1H[K[27;31H[?25l[56;154H^[[27;31H[?12l[?25h[?25l[56;154H  [27;32H[56;164H150,18-27     75%[27;31H[?12l[?25h[?25l[56;154H:[27;31H[56;154H[K[56;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l[?1002l"OwnerRemoveTicketOkay.php" 218L, 5008C written
+[?1l>[?12l[?25h[?1049l]0;root@ip-172-31-43-222: /var/www/htmlroot@ip-172-31-43-222:/var/www/html# vim OwnerRemoveTicketOkay.php 
+[?1000h[?1049h[?1h=[2;1H▽[6n[1;1H  [1;1H[1;56r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[56;1H"OwnerRemoveTicketOkay.php" 218L, 5008C[>c[1;1H[38;5;130m  1 [m[34m<!DOCTYPE html>[m
+[38;5;130m  2 [m[36m<[m[38;5;130mhtml[m[36m [m[32mlang[m[36m=[m[31m"en"[m[36m>[m
+[38;5;130m  3 
+  4 [m[36m<[m[38;5;130mhead[m[36m>[m
+[38;5;130m  5 [m[35m    [m[36m<[m[38;5;130mmeta[m[36m [m[32mcharset[m[36m=[m[31m"utf-8"[m[36m>[m
+[38;5;130m  6 [m[35m    [m[36m<[m[38;5;130mtitle[m[36m>[m[35mLuis Trucking - Sign In [m[36m</[m[38;5;130mtitle[m[36m>[m
+[38;5;130m  7 
+  8 [m[35m    [m[34m<!-- Google Fonts -->[m
+[38;5;130m  9 [m[35m    [m[36m<[m[38;5;130mlink[m[36m [m[32mhref[m[36m=[m[31m'https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900'[m[36m [m[32mrel[m[36m=[m[31m'stylesheet'[m[36m [m[32mtype[m[36m=[m[31m'text/css'[m[36m>[m
+[38;5;130m 10 
+ 11 [m[35m    [m[36m<[m[38;5;130mlink[m[36m [m[32mrel[m[36m=[m[31m"stylesheet"[m[36m [m[32mhref[m[36m=[m[31m"css/animate.css"[m[36m>[m
+[38;5;130m 12 [m[35m    [m[34m<!-- Custom Stylesheet -->[m
+[38;5;130m 13 [m[35m    [m[36m<[m[38;5;130mlink[m[36m [m[32mrel[m[36m=[m[31m"stylesheet"[m[36m [m[32mhref[m[36m=[m[31m"css/styleDisplayDriverData.css"[m[36m>[m
+[38;5;130m 14 
+ 15 [m[35m    [m[36m<[m[38;5;130mscript[m[36m [m[32msrc[m[36m=[m[31m"https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"[m[36m></[m[38;5;130mscript[m[36m>[m
+[38;5;130m 16 
+ 17 [m[36m<[m[38;5;130mstyle[m[36m>[m
+[38;5;130m 18 body[m [36m{[m[32mmargin[m:[31m0[m;[36m}[m
+[38;5;130m 19 [m[36m.header{[m
+[38;5;130m 20 [m    [32mbackground-color[m:[31m#333[m;
+[38;5;130m 21 [m    [32moverflow-y[m:[31mhidden[m;
+[38;5;130m 22 [m    [32mfont-family[m:[31m'Roboto Slab'[m[35m,[m [31mserif[m;
+[38;5;130m 23 [m    [32mfont-size[m:[31m16px[m;
+[38;5;130m 24 [m    [32mposition[m: [31mrelative[m;
+[38;5;130m 25 [m[36m}[m
+[38;5;130m 26 
+ 27 [m[36m.header-wrapper{[m
+[38;5;130m 28 [m    [32mwidth[m:[31m100%[m;
+[38;5;130m 29 [m    [32mmargin[m: [31m0[m [31mauto[m;
+[38;5;130m 30 [m    [32mtext-align[m: [31mleft[m;
+[38;5;130m 31 [m    [32mposition[m: [31mfixed[m;
+[38;5;130m 32 [m    [32mz-index[m: [31m99[m;
+[38;5;130m 33 [m[36m}[m
+[38;5;130m 34 
+ 35 [m[36m.header[m [38;5;130mul[m[36m{[m
+[38;5;130m 36 [m    [32mbackground-color[m:[31m#333[m;
+[38;5;130m 37 [m    [32mlist-style-type[m:[31mnone[m;
+[38;5;130m 38 [m    [32mpadding[m: [31m0[m;
+[38;5;130m 39 [m    [32mmargin[m: [31m0[m;
+[38;5;130m 40 [m    [32mtop[m: [31m0[m;
+[38;5;130m 41 [m    [32mposition[m: [31mrelative[m;
+[38;5;130m 42 [m    [32mz-index[m: [31m101[m;
+[38;5;130m 43 [m[36m}[m
+[38;5;130m 44 
+ 45 [m[36m.header[m [38;5;130mul[m [38;5;130mli[m[36m{[m
+[38;5;130m 46 [m    [32mdisplay[m:[31minline-block[m;
+[38;5;130m 47 [m    [32mcolor[m: [31mwhite[m;
+[38;5;130m 48 [m[36m}[m
+[38;5;130m 49 
+ 50 [m[36m.header[m [38;5;130mul[m [38;5;130mli[m:[35mhover[m[36m{[m
+[38;5;130m 51 [m    [32mbackground-color[m: [31m#888[m;
+[38;5;130m 52 [m[36m}[m
+[38;5;130m 53 
+ 54 [m[36m.header[m [38;5;130mul[m [38;5;130mli[m [38;5;130ma[m[35m,[mvisited[36m{[m
+[38;5;130m 55 [m    [32mcolor[m: [31mwhite[m;[56;164H1,1[11CTop[1;5H[?12l[?25h[?1000l[?1002h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 56 [m    [32mdisplay[m:[31mblock[m;
+[38;5;130m 57 [m    [32mpadding[m: [31m16px[m;
+[38;5;130m 58 [m    [32mtext-decoration[m: [31mnone[m;[56;1H[K[56;164H4,1[12C1%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 59 [m[36m}[m
+[38;5;130m 60 
+ 61 [m[36m.header[m [38;5;130mul[m [38;5;130mli[m [38;5;130ma[m:[35mhover[m[36m{[m[56;164H[K[56;164H7,0-1[10C3%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 62 [m    [32mcolor[m: [31mwhite[m;
+[38;5;130m 63 [m    [32mtext-decoration[m: [31mnone[m;
+[38;5;130m 64 [m[36m}[m[56;164H[K[56;164H10,0-1[9C5%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 65 
+ 66 [m[36m.header[m [38;5;130mul[m [38;5;130mli[m:[35mhover[m [38;5;130mul[m[36m{[m
+[38;5;130m 67 [m    [32mdisplay[m: [31mblock[m;[56;164H[K[56;164H13,1-4[9C7%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 68 [m[36m}[m
+[38;5;130m 69 
+ 70 [m[36m.header[m [38;5;130mul[m [38;5;130mul[m[36m{[m[56;164H[K[56;164H16,0-1[9C9%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 71 [m    [32mdisplay[m: [31mnone[m;
+[38;5;130m 72 [m    [32mposition[m: [31mabsolute[m;
+[38;5;130m 73 [m    [32mtop[m: [31m53px[m;[56;164H[K[56;164H19,1[10C11%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 74 [m    [32mz-index[m:[31m1000[m;
+[38;5;130m 75 [m[36m}[m
+[38;5;130m 76 [m[56;164H[K[56;164H22,1-4[8C12%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 77 [m[36m.header[m [38;5;130mul[m [38;5;130mul[m [38;5;130mli[m[36m{[m
+[38;5;130m 78 [m    [32mdisplay[m: [31mblock[m;
+[38;5;130m 79 [m[36m}[m[56;164H[K[56;164H25,1[10C14%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 80 
+ 81 [m[36m.active[m [36m{[m
+[38;5;130m 82 [m    [32mbackground-color[m:[31m#999[m;[56;164H[K[56;164H28,1-4[8C16%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 83 [m[36m}[m
+[38;5;130m 84 
+ 85 [m[36m</[m[38;5;130mstyle[m[36m>[m[56;164H[K[56;164H31,1-4[8C18%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 86 [m[36m</[m[38;5;130mhead[m[36m>[m
+[38;5;130m 87 [m[36m<[m[38;5;130mbody[m[36m>[m
+[38;5;130m 88 [m[36m<[m[38;5;130mdiv[m[36m [m[32mclass[m[36m=[m[31m"header"[m[36m>[m[56;164H[K[56;164H34,0-1[8C20%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 89 [m    [36m<[m[38;5;130mdiv[m[36m [m[32mclass[m[36m=[m[31m"header-wrapper"[m[36m>[m
+[38;5;130m 90 [m    [36m<[m[38;5;130mul[m[36m>[m
+[38;5;130m 91 [m    [36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"home.php"[m[36m>[m[4m[35mHome[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m><[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H37,1-4[8C22%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 92 [m[8C[36m<[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"#hauler"[m[36m>[m[4m[35mHaulers[m[36m</[m[38;5;130ma[m[36m>[m
+[38;5;130m 93 [m[12C[36m<[m[38;5;130mul[m[36m>[m
+[38;5;130m 94 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/AddHauler.php"[m[36m>[m[4m[35mAdd Hauler[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H40,1-4[8C23%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 95 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/RemoveHauler.php"[m[36m>[m[4m[35mRemove Hauler[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m 96 [m[12C[36m</[m[38;5;130mul[m[36m></[m[38;5;130mli[m[36m><[m[38;5;130mli[m[36m>[m
+[38;5;130m 97 [m[56;164H[K[56;164H43,1[10C25%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m 98 [m[8C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"#brk"[m[36m>[m[4m[35mBrokers[m[36m</[m[38;5;130ma[m[36m>[m
+[38;5;130m 99 [m[12C[36m<[m[38;5;130mul[m[36m>[m
+[38;5;130m100 [m[56;164H[K[56;164H46,1-4[8C27%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m101 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/OwnerDisplayBrokerTicket.php"[m[36m>[m[4m[35mView Tickets[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m102 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/OwnerPaidTicket.php"[m[36m>[m[4m[35mUpdate Paid Tickets[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m103 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/AddBroker.php"[m[36m>[m[4m[35mAdd Broker[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H49,0-1[8C29%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m104 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/RemoveBroker.php"[m[36m>[m[4m[35mRemove Broker[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m105 [m[12C[36m</[m[38;5;130mul[m[36m></[m[38;5;130mli[m[36m><[m[38;5;130mli[m[36m>[m
+[38;5;130m106 [m[8C[36m<[m[38;5;130ma[m[36m [m[32mclass[m[36m=[m[31m"active"[m[36m [m[32mhref[m[36m=[m[31m"#drvr"[m[36m>[m[4m[35mDriver[m[36m</[m[38;5;130ma[m[36m>[m[56;164H[K[56;164H52,1[10C31%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m107 [m[12C[36m<[m[38;5;130mul[m[36m>[m
+[38;5;130m108 
+109 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/AddDriver.php"[m[36m>[m[4m[35mAdd Ticket[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H55,1-4[8C33%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m110 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/OwnerDisplayDriverTicket.php"[m[36m>[m[4m[35mView Tickets[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m111 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m/OwnerRemoveTicket.php[m[36m>[m[4m[35mRemove Ticket[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m112 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/OwnerApproveTicket.php"[m[36m>[m[4m[35mApprove Tickets[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H58,1-4[8C34%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m113 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/AddDriver.php"[m[36m>[m[4m[35mAdd Driver[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m114 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/RemoveDriver.php"[m[36m>[m[4m[35mRemove Driver[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m115 [m[12C[36m</[m[38;5;130mul[m[36m></[m[38;5;130mli[m[36m><[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H61,1[10C36%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m116 [m[12C[36m<[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"#trk"[m[36m>[m[4m[35mTrucks[m[36m</[m[38;5;130ma[m[36m>[m
+[38;5;130m117 [m[12C[36m<[m[38;5;130mul[m[36m>[m
+[38;5;130m118 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/AddTruck.php"[m[36m>[m[4m[35mAdd Truck[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H64,1[10C38%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m119 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/RemoveTruck.php"[m[36m>[m[4m[35mRemove Truck[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m120 [m[12C[36m</[m[38;5;130mul[m[36m></[m[38;5;130mli[m[36m><[m[38;5;130mli[m[36m>[m
+[38;5;130m121 [m[12C[36m<[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"#ex"[m[36m>[m[4m[35mExpenses[m[36m</[m[38;5;130ma[m[36m>[m[56;164H[K[56;164H67,1-4[8C40%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m122 [m[12C[36m<[m[38;5;130mul[m[36m>[m
+[38;5;130m123 
+124 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/OwnerAddExpense.php"[m[36m>[m[4m[35mAdd Expense[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H70,1[10C42%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m125 [m[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m/OwnerViewExpense.php[m[36m>[m[4m[35mView Expense[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m126 [m[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m/RemoveExpense.php[m[36m>[m[4m[35mRemove Expense[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m127 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/AddVendor.php"[m[36m>[m[4m[35mAdd Vendor[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H73,1-4[8C44%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m128 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/RemoveVendor.php"[m[36m>[m[4m[35mRemove Vendor[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m129 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/AddExpenseType.php"[m[36m>[m[4m[35mAdd Expense Type[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m130 [m[16C[36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"/RemoveExpenseType.php"[m[36m>[m[4m[35mRemove Expense Type[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H76,0-1[8C46%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m131 [m[12C[36m</[m[38;5;130mul[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m132 [m[8C[36m<[m[38;5;130mli[m[36m [m[32mstyle[m[36m = [m[31m"float:right"[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"logout.php"[m[36m>[m[4m[35mLogout[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m>[m
+[38;5;130m133 [m[8C[36m<[m[38;5;130mli[m[36m [m[32mstyle[m[36m = [m[31m"float:right; color:#FFF; background-color:#333; padding: 14px 16px;"[m[36m>[m[35m<?php[m [35mecho[m "[31mWelcome, [m"; [35mecho[m [38;5;130m$[m[36m_COOKIE[m[35m[[muname[35m][m[38;5;130m.[m"[31m![m"; [35m?>[m[36m</[m[38;5;130mli[m[36m>[m[56;164H[K[56;164H79,1[10C47%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m134 [m    [36m</[m[38;5;130mul[m[36m>[m
+[38;5;130m135 [m    [36m</[m[38;5;130mdiv[m[36m>[m
+[38;5;130m136 [m[36m</[m[38;5;130mdiv[m[36m>[m[56;164H[K[56;164H82,1-4[8C49%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m137 
+138 
+139 [m[56;164H[K[56;164H85,1[10C51%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m140 
+141 [m[36m<[m[38;5;130mdiv[m[36m [m[32mclass[m[36m=[m[31m"container"[m[36m>[m
+[38;5;130m142 [m[8C[36m<[m[38;5;130mdiv[m[36m [m[32mclass[m[36m=[m[31m"top"[m[36m>[m[56;164H[K[56;164H88,1[10C53%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m143 [m[12C[36m<[m[38;5;130mh1[m[36m [m[32mid[m[36m=[m[31m"title"[m[36m [m[32mclass[m[36m=[m[31m"hidden"[m[36m><[m[38;5;130mspan[m[36m [m[32mid[m[36m=[m[31m"logo"[m[36m><[m[38;5;130mbr[m[36m/>[m[35m [m[36m</[m[38;5;130mh1[m[36m>[m
+[38;5;130m144 [m[8C[36m</[m[38;5;130mdiv[m[36m>[m
+[38;5;130m145 [m[8C[36m<[m[38;5;130mdiv[m[36m [m[32mclass[m[36m=[m[31m"ticket-box animated fadeInUp"[m[36m>[m[56;164H[K[56;164H91,1-4[8C55%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m146 [m[12C[36m<[m[38;5;130mdiv[m[36m [m[32mclass[m[36m=[m[31m"box-header"[m[36m>[m
+[38;5;130m147 [m[16C[36m<[m[38;5;130mh2[m[36m>[m[35mRemove Ticket Entries [m[36m</[m[38;5;130mh2[m[36m>[m
+[38;5;130m148 [m[12C[36m<[m[38;5;130mform[m[36m [m[32maction[m[36m=[m[31m"OwnerRemoveTicketGenRep.php"[m[36m [m[32mmethod[m[36m=[m[31m"post"[m[36m>[m[56;164H[K[56;164H94,1-4[8C57%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3L[1;56r[1;1H[38;5;130m 91 [m    [36m<[m[38;5;130mli[m[36m><[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"home.php"[m[36m>[m[4m[35mHome[m[36m</[m[38;5;130ma[m[36m></[m[38;5;130mli[m[36m><[m[38;5;130mli[m[36m>[m
+[38;5;130m 92 [m[8C[36m<[m[38;5;130ma[m[36m [m[32mhref[m[36m=[m[31m"#hauler"[m[36m>[m[4m[35mHaulers[m[36m</[m[38;5;130ma[m[36m>[m
+[38;5;130m 93 [m[12C[36m<[m[38;5;130mul[m[36m>[m[56;164H[K[56;164H94,1-4[8C55%[4;8H[?12l[?25h[?25l[1;55r[1;1H[3L[1;56r[1;1H[38;5;130m 88 [m[36m<[m[38;5;130mdiv[m[36m [m[32mclass[m[36m=[m[31m"header"[m[36m>[m
+[38;5;130m 89 [m    [36m<[m[38;5;130mdiv[m[36m [m[32mclass[m[36m=[m[31m"header-wrapper"[m[36m>[m
+[38;5;130m 90 [m    [36m<[m[38;5;130mul[m[36m>[m[56;164H[K[56;164H94,1-4[8C53%[7;8H[?12l[?25h[?25l[1;55r[1;1H[3L[1;56r[1;1H[38;5;130m 85 [m[36m</[m[38;5;130mstyle[m[36m>[m
+[38;5;130m 86 [m[36m</[m[38;5;130mhead[m[36m>[m
+[38;5;130m 87 [m[36m<[m[38;5;130mbody[m[36m>[m[56;164H[K[56;164H94,1-4[8C51%[10;8H[?12l[?25h[?25l[1;55r[1;1H[3L[1;56r[1;1H[38;5;130m 82 [m    [32mbackground-color[m:[31m#999[m;
+[38;5;130m 83 [m[36m}[m
+[38;5;130m 84 [m[56;164H[K[56;164H94,1-4[8C49%[13;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m137 
+138 
+139 [m[56;164H[K[56;164H94,1-4[8C51%[10;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m140 
+141 [m[36m<[m[38;5;130mdiv[m[36m [m[32mclass[m[36m=[m[31m"container"[m[36m>[m
+[38;5;130m142 [m[8C[36m<[m[38;5;130mdiv[m[36m [m[32mclass[m[36m=[m[31m"top"[m[36m>[m[56;164H[K[56;164H94,1-4[8C53%[7;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m143 [m[12C[36m<[m[38;5;130mh1[m[36m [m[32mid[m[36m=[m[31m"title"[m[36m [m[32mclass[m[36m=[m[31m"hidden"[m[36m><[m[38;5;130mspan[m[36m [m[32mid[m[36m=[m[31m"logo"[m[36m><[m[38;5;130mbr[m[36m/>[m[35m [m[36m</[m[38;5;130mh1[m[36m>[m
+[38;5;130m144 [m[8C[36m</[m[38;5;130mdiv[m[36m>[m
+[38;5;130m145 [m[8C[36m<[m[38;5;130mdiv[m[36m [m[32mclass[m[36m=[m[31m"ticket-box animated fadeInUp"[m[36m>[m[56;164H[K[56;164H94,1-4[8C55%[4;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m146 [m[12C[36m<[m[38;5;130mdiv[m[36m [m[32mclass[m[36m=[m[31m"box-header"[m[36m>[m
+[38;5;130m147 [m[16C[36m<[m[38;5;130mh2[m[36m>[m[35mRemove Ticket Entries [m[36m</[m[38;5;130mh2[m[36m>[m
+[38;5;130m148 [m[12C[36m<[m[38;5;130mform[m[36m [m[32maction[m[36m=[m[31m"OwnerRemoveTicketGenRep.php"[m[36m [m[32mmethod[m[36m=[m[31m"post"[m[36m>[m[56;164H[K[56;164H94,1-4[8C57%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m149 [m[12C[36m</[m[38;5;130mdiv[m[36m>[m
+[38;5;130m150 [m[12CTicket Removed!
+[38;5;130m151 [m[12C[36m<[m[38;5;130mlabel[m[36m [m[32mfor[m[36m=[m[31m"driver"[m[36m>[mSelect Hauler:[36m</[m[38;5;130mlabel[m[36m>[m[56;164H[K[56;164H97,0-1[8C58%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m152 [m[12C[36m<[m[38;5;130mbr[m[36m/>[m
+[38;5;130m153 [m[12C[36m<[m[38;5;130mselect[m[36m [m[32mname[m[36m=[m[31m'hauler'[m[36m [m[32mid[m[36m=[m[31m'hauler'[m[36m>[m
+[38;5;130m154 [m[12C[36m<[m[38;5;130moption[m[36m [m[32mvalue[m[36m=[m[31m'*'[m[36m>[mAll[36m</[m[38;5;130moption[m[36m>[m[56;164H[K[56;164H100,0-1[7C60%[1;5H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m155 [m[12C[35m<?php[m
+[38;5;130m156 [m[16C[35mrequire([m'[31m./GetHaulers.php[m'[35m)[m;
+[38;5;130m157 [m[12C[35m?>[m[56;164H[K[56;164H103,1-4[7C62%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m158 [m[12C[36m</[m[38;5;130mselect[m[36m>[m
+[38;5;130m159 [m[12C[36m<[m[38;5;130mbr[m[36m/>[m
+[38;5;130m160 [m[12C[36m<[m[38;5;130mlabel[m[36m [m[32mfor[m[36m=[m[31m"driver"[m[36m>[mSelect Broker:[36m</[m[38;5;130mlabel[m[36m>[m[56;164H[K[56;164H106,1-4[7C64%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m161 [m[12C[36m<[m[38;5;130mbr[m[36m/>[m
+[38;5;130m162 [m[12C[36m<[m[38;5;130mselect[m[36m [m[32mname[m[36m=[m[31m'broker'[m[36m [m[32mid[m[36m=[m[31m'broker'[m[36m>[m
+[38;5;130m163 [m[12C[36m<[m[38;5;130moption[m[36m [m[32mvalue[m[36m=[m[31m'*'[m[36m>[mAll[36m</[m[38;5;130moption[m[36m>[m[56;164H[K[56;164H109,1-4[7C66%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m164 [m[12C[35m<?php[m
+[38;5;130m165 [m[16C[35mrequire([m'[31m./GetBrokers.php[m'[35m)[m;
+[38;5;130m166 [m[12C[35m?>[m[56;164H[K[56;164H112,1-4[7C68%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m167 [m[12C[36m</[m[38;5;130mselect[m[36m>[m
+[38;5;130m168 [m[12C[36m<[m[38;5;130mbr[m[36m/>[m
+[38;5;130m169 [m[56;164H[K[56;164H115,1-4[7C69%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m170 [m[12C[36m<[m[38;5;130mlabel[m[36m [m[32mfor[m[36m=[m[31m"driver"[m[36m>[mSelect Driver:[36m</[m[38;5;130mlabel[m[36m>[m
+[38;5;130m171 [m[12C[36m<[m[38;5;130mbr[m[36m/>[m
+[38;5;130m172 [m[12C[36m<[m[38;5;130mselect[m[36m [m[32mname[m[36m=[m[31m'driver'[m[36m [m[32mid[m[36m=[m[31m'driver'[m[36m>[m[56;164H[K[56;164H118,1-4[7C71%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m173 [m[12C[36m<[m[38;5;130moption[m[36m [m[32mvalue[m[36m=[m[31m'*'[m[36m>[mAll[36m</[m[38;5;130moption[m[36m>[m
+[38;5;130m174 [m[12C[35m<?php[m
+[38;5;130m175 [m[16C[35mrequire([m'[31m./GetDriver.php[m'[35m)[m;[56;164H[K[56;164H121,1-4[7C73%[1;8H[?12l[?25h[?25l[1;55r[1;1H[3M[1;56r[53;1H[38;5;130m176 [m[12C[35m?>[m
+[38;5;130m177 [m[12C[36m</[m[38;5;130mselect[m[36m>[m
+[38;5;130m178 [m[12C[36m<[m[38;5;130mbr[m[36m/>[m[56;164H[K[56;164H124,1-4[7C75%[1;8H[?12l[?25h[?25l[56;165H50,18-27[27;31H[?12l[?25h[?25l[56;154Ha[27;31H[56;154H [27;32H[56;1H[1m-- INSERT --[m[56;164H[K[56;164H150,19-28     75%[27;32H[?12l[?25h[?25l[28;17H[K[29;18H[38;5;130mlabel[m[36m [m[32mfor[m[36m=[m[31m"driver"[m[36m>[mSelect Hauler:[36m</[m[38;5;130mlabel[m[36m>[m[30;18H[38;5;130mbr[m[36m/>[m[30;22H[K[31;18H[38;5;130mselect[m[1C[32mname[m[36m=[m[31m'hauler'[m[36m [m[32mid[m[36m=[m[31m'hauler'[m[36m>[32;17H<[m[38;5;130moption[m[36m [m[32mvalue[m[36m=[m[31m'*'[m[36m>[mAll[36m</[m[38;5;130moption[m[36m>[m[33;17H[35m<?php[m[33;22H[K[34;17H    [35mrequire([m'[31m./GetHaulers.php[m'[35m)[m;[35;17H[35m?>[m[35;19H[K[36;18H[36m/[m[38;5;130mselect[m[36m>[m[37;18H[38;5;130mbr[m[36m/>[m[37;22H[K[38;18H[38;5;130mlabel[m[36m [m[32mfor[m[36m=[m[31m"driver"[m[36m>[mSelect Broker:[36m</[m[38;5;130mlabel[m[36m>[m[39;18H[38;5;130mbr[m[36m/>[m[39;22H[K[40;18H[38;5;130mselect[m[1C[32mname[m[36m=[m[31m'broker'[m[36m [m[32mid[m[36m=[m[31m'broker'[m[36m>[41;17H<[m[38;5;130moption[m[36m [m[32mvalue[m[36m=[m[31m'*'[m[36m>[mAll[36m</[m[38;5;130moption[m[36m>[m[42;17H[35m<?php[m[42;22H[K[43;17H    [35mrequire([m'[31m./GetBrokers.php[m'[35m)[m;[44;17H[35m?>[m[44;19H[K[45;18H[36m/[m[38;5;130mselect[m[36m>[46;17H<[m[38;5;130mbr[m[36m/>[m[47;17H[K[48;18H[38;5;130mlabel[m[36m [m[32mfor[m[36m=[m[31m"driver"[m[36m>[mSelect Driver:[36m</[m[38;5;130mlabel[m[36m>[m[49;18H[38;5;130mbr[m[36m/>[m[49;22H[K[50;18H[38;5;130mselect[m[1C[32mname[m[36m=[m[31m'driver'[m[36m [m[32mid[m[36m=[m[31m'driver'[m[36m>[51;17H<[m[38;5;130moption[m[36m [m[32mvalue[m[36m=[m[31m'*'[m[36m>[mAll[36m</[m[38;5;130moption[m[36m>[m[52;17H[35m<?php[m[52;22H[K[53;17H    [35mrequire([m'[31m./GetDriver.php[m'[35m)[m;[54;17H[35m?>[m[54;19H[K[55;18H[36m/[m[38;5;130mselect[m[36m>[m[56;166H1,4-13 [28;17H[?12l[?25h[?25l[97m[101m<[m[56;168H5-14[28;18H[?12l[?25h[?25l[36m<>[29;5H            [m[97m[101m<[m[32mlabel[m[56;168H6-15[28;19H[?12l[?25h[?25l[56;168H5-14[28;18H[?12l[?25h[?25l[38;5;130mb[m[36m>[m[29;5H[1m            [m[36m<[m[38;5;130mlabel[m[14C[1mSelect Hauler:[30;5H            [31;5H            [32;5H            [18CAll[33;5H            [36;5H            [37;5H            [38;5H            [20CSelect Broker:[39;5H            [40;5H            [41;5H            [18CAll[42;5H            [45;5H            [46;5H            [48;5H            [20CSelect Driver:[49;5H            [50;5H            [51;5H            [18CAll[52;5H            [55;5H            [m[56;168H6-15[28;19H[?12l[?25h[?25l[38;5;130mr[m[36m>[m[29;5H            [36m<[m[19CSelect Hauler:[36m<[m[30;5H            [36m<[m[31;5H            [36m<[m[32;5H            [36m<[m[17CAll[36m<[m[33;5H            [35m<[m[36;5H            [36m<[m[37;5H            [36m<[m[38;5H            [36m<[m[19CSelect Broker:[36m<[m[39;5H            [36m<[m[40;5H            [36m<[m[41;5H            [36m<[m[17CAll[36m<[m[42;5H            [35m<[m[45;5H            [36m<[m[46;5H            [36m<[m[48;5H            [36m<[m[19CSelect Driver:[36m<[m[49;5H            [36m<[m[50;5H            [36m<[m[51;5H            [36m<[m[17CAll[36m<[m[52;5H            [35m<[m[55;5H            [36m<[m[56;168H7-16[28;20H[?12l[?25h[?25l[36m/>[m[56;168H8-17[28;21H[?12l[?25h[56;1H[K[28;20H[?25l[56;154H^[[28;20H[?12l[?25h[?25l[56;154H  [28;21H[56;164H151,7-16      75%[28;20H[?12l[?25h[?25l[56;154H:[28;20H[56;154H[K[56;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l[?1002l"OwnerRemoveTicketOkay.php" 219L, 5017C written
+[?1l>[?12l[?25h[?1049l]0;root@ip-172-31-43-222: /var/www/htmlroot@ip-172-31-43-222:/var/www/html# vim OwnerRemoveTicketOkay.php [1@Error[C[C[C[C[Cls[KLS./script.sh OwnerRemoveTicket[4Pvim RemoveHaulerOkay.php [1@Error[C[C[C[C[C[5P[C[C[C[C[Cls[Kcd /var/www/html/vim RemoveExpenseGenRep.php ls[Kgit reset --hard b875243699cc9b88bef85f66c087528b34eb1f73[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pcheckout[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4@reset --hard[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[29Pvim RemoveExpenseGenRep.php sudo su[Kvim RemoveExpenseGenRep.php [27@cp OwnerRemoveTicketGenRep.php[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Ktouch OwnerRemoveTicketInfo.phpGenRep.phpcp RemoveExpense.php OwnerRemoveTicket.php [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Ptouch OwnerRemoveTicketGenRep.php[2PInfo.phpls[Kcp OwnerRemoveTicketGenRep.php RemoveExpenseGenRep.php [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[27Pvim[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo su[Kvim RemoveExpenseGenRep.php git reset --hard b875243699cc9b88bef85f66c087528b34eb1f73[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pcheckout[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4@reset --hard[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kvim RemoveExpenseGenRep.php [11Pcd /var/www/html/vim RemoveExpenseGenRep.php ls[Kgit reset --hard b875243699cc9b88bef85f66c087528b34eb1f73[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Pcheckout[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4@reset --hard[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[29Pvim RemoveExpenseGenRep.php sudo su[Kvim RemoveExpenseGenRep.php [27@cp OwnerRemoveTicketGenRep.php[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Ktouch OwnerRemoveTicketInfo.phpGenRep.phpcp RemoveExpense.php OwnerRemoveTicket.php [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[22Pvp RemoveExpense[C[C[C[C[Cls[K./ScriptAddNewFeature.sh [2@vim [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Ktouch OwnerRemoveTicket.phpls[Kgit push orgin masterls[Kgit merge my-temporary-work[8Pcheckout masterbranch my-temporary-work[7Ppush orgin masteradd *[Kpush orgin masterbranch my-temporary-work
+fatal: A branch named 'my-temporary-work' already exists.
+]0;root@ip-172-31-43-222: /var/www/htmlroot@ip-172-31-43-222:/var/www/html# git branch my-temporary-work1
+]0;root@ip-172-31-43-222: /var/www/htmlroot@ip-172-31-43-222:/var/www/html# git branch my-temporary-work1[Kvim OwnerRemoveTicketOkay.php [1@Error[C[C[C[C[Cls[KLS./script.sh OwnerRemoveTicket[4Pvim RemoveHaulerOkay.php [1@Error[C[C[C[C[C[5P[C[C[C[C[Cls[Kcd /var/www/html/vim RemoveExpenseGenRep.php ls[Kgit reset --hard b875243699cc9b88bef85f66c087528b34eb1f73[C[C

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<title>Luis Trucking - Sign In </title>
+
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Custom Stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+</head>
+<body>
+
+	<div class="top">
+			<h1 id="title" class="hidden">  <br/> </h1>
+		
+<h1> Luis Trucking </h1>
+</div>
+
+
+<p>Please input the</p>
+<div class="login-box animated fadeInUp">
+<form action = "" id ="inputform">
+ticket ID:<input type="text" name="ticket">
+<br>
+Hauler name:
+<select name = "Hauler" form="inputform">
+<option value="All American Asphalt">All American Asphalt</option>
+<option value="Vulcan Materials">Vulcan Materials</option>
+<option value="Granite Construction">Granite Construction</option>
+<option value="Matich corp">Matich corp</option>
+<option value="TC San Diego" selected>TC San Diego</option>
+</select>
+<br>
+broker:
+<!--<form action= "demo_form.asp" method="get">
+<input list="broker" name = "broker">
+<datalist id="broker">
+-->
+<select name = "broker" form=inputform>
+<option value="OTM Trucking">OTM Trucking</option>
+<option value="Roger Wood Transport">Roger Wood Transport</option>
+<option value="Nard Trucking">Nard Trucking</option>
+<option value="Kissenger Transport">Kissenger Transport</option>
+<option value="Boone Trucking" selected>Boone Trucking</option>
+<option value="G&J Heavy Haul">G&J Heavy Haul</option>
+</select>
+<!--</datalist>
+</form>
+-->
+<br>
+truck ID:
+<input type="text" name="Truck">
+<br>
+weight:
+<input type="text" name="Weight">
+<br>
+pay rate:
+<input type="text" name="Rate">
+<br>
+date:
+<input type="date" name="date">
+<br>
+<input type="submit">
+</form>
+<div/>
+
+
+<script>
+document.body.style.background = red;
+function myFunction() {
+		var ticket,plant,broker,truck,weight,rate, text;
+
+		// Get the value of the input field with id="ticket"
+		ticket = document.getElementById("Ticket").value;
+		plant = document.getElementById("Plant").value;
+	//	broker = document.getElementById("broker").value;
+		truck = document.getElementById("Truck").value;
+		weight = document.getElementById("Weight").value;
+		rate = document.getElementById("Rate").value;
+	//	date = document.getElementById("date").value;
+		// If x is Not a Number or less than one or greater than 10
+		//    if (isNaN(x) || x < 1 || x > 10) {
+		//        text = "Input not valid";
+		//    } else {
+		//        text = "Input OK";
+		//    }
+		text = [ticket,plant,truck,weight,rate]
+				document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</div>
+</body>
+</html>
+

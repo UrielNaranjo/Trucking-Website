@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+		    background-color: lightblue;
+}
+
+div {
+		background-color: lightblue;
+}
+
+p {
+		background-color: yellow;
+}
+</style>
+</head>
+<body>
+<h1>Luis Trucking</h1>
+
+<p>Please input the</p>
+<p>ticket ID:</p>
+<input id="Ticket">
+<br>
+<p>plant name:</p>
+<input id="Plant">
+<br>
+<p>broker:</p>
+<input id="Broker">
+<br>
+<p>truck ID:</p>
+<input id="Truck">
+<br>
+<p>weight:</p>
+<input id="Weight">
+<br>
+<p>pay rate:</p>
+<input id="Rate">
+<br>
+<p>date:</p>
+<input id="Date">
+<br>
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+document.body.style.background = red;
+function myFunction() {
+		var ticket,plant,broker,truck,weight,rate,date, text;
+
+		// Get the value of the input field with id="ticket"
+		ticket = document.getElementById("Ticket").value;
+		plant = document.getElementById("Plant").value;
+		broker = document.getElementById("Broker").value;
+		truck = document.getElementById("Truck").value;
+		weight = document.getElementById("Weight").value;
+		rate = document.getElementById("Rate").value;
+		date = document.getElementById("Date").value;
+		// If x is Not a Number or less than one or greater than 10
+		//    if (isNaN(x) || x < 1 || x > 10) {
+		//        text = "Input not valid";
+		//    } else {
+		//        text = "Input OK";
+		//    }
+		text = [ticket,plant,broker,truck,weight,rate,date]
+				document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
